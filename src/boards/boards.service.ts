@@ -1,8 +1,8 @@
 import { Inject, Injectable, NotFoundException } from '@nestjs/common';
-import { BoardStatus } from './board.model';
 import { CreateBoardDto } from './dto/create-board.dto';
-import { Board } from './board.entity';
+import { Board } from '../entities/board.entity';
 import { Repository } from 'typeorm';
+import { BoardStatus } from './board-status.enum';
 
 @Injectable()
 export class BoardsService {
